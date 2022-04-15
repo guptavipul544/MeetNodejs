@@ -29,6 +29,7 @@ employeeRouter.get('/:companyName', expressAsyncHandler(async(req,res)=>{
 
 
 // 2.Create a new employee for existing company
+// when use postman , don't put cmpName in body
 employeeRouter.post(
     '/:companyName',
     expressAsyncHandler(async (req, res) => {

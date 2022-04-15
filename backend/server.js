@@ -35,8 +35,6 @@ app.get('/', (req, res) => {
     res.send('Server is ready');
 });
 
-// const __dirname = path.resolve();
-// app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 app.use((err,req,res,next)=>{
     res.status(500).send({message: err.message})
